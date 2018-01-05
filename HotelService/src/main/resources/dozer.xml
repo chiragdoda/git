@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+      http://dozer.sourceforge.net/schema/beanmapping.xsd">
+	<mapping>
+		<class-a>com.bookingmanager.vo.HotelVO</class-a>
+		<class-b map-null="false">com.bookingmanager.hotel.dto.HotelDTO</class-b>
+		<field>
+			<a>hotelName</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>cityName</a>
+			<b>city.cityName</b>
+		</field>
+		<field>
+			<a>amenities</a>
+			<b>amenities</b>
+		</field>
+		<field>
+			<a>active</a>
+			<b>active</b>
+		</field>
+		<field>
+			<a>contactNo</a>
+			<b>contact</b>
+		</field>
+		<field>
+			<a>description</a>
+			<b>description</b>
+		</field>
+		<field>
+			<a>countryName</a>
+			<b>city.country.countryName</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a map-null="false">com.bookingmanager.hotel.entity.Hotel</class-a>
+		<class-b map-null="false">com.bookingmanager.hotel.dto.HotelDTO</class-b>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>id</a>
+			<b>id</b>
+		</field>
+		<field>
+			<a>contactNo</a>
+			<b>contact</b>
+		</field>
+		<field>
+			<a>description</a>
+			<b>description</b>
+		</field>
+		<field>
+			<a>active</a>
+			<b>active</b>
+		</field>
+		<field>
+			<a>city.cityName</a>
+			<b>city.cityName</b>
+		</field>
+		<field>
+			<a>aminitySet</a>
+			<b>amenities</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>com.bookingmanager.vo.AmenityVO</class-a>
+		<class-b>com.bookingmanager.hotel.dto.AmenityDTO</class-b>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<!-- <field> <a>id</a> <b>id</b> </field> -->
+	</mapping>
+
+	<mapping>
+		<class-a>com.bookingmanager.hotel.entity.Amenities</class-a>
+		<class-b>com.bookingmanager.hotel.dto.AmenityDTO</class-b>
+		<field>
+			<a>name</a>
+			<b>name</b>
+		</field>
+		<field>
+			<a>amenityId</a>
+			<b>id</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>com.bookingmanager.vo.CityVO</class-a>
+		<class-b>com.bookingmanager.hotel.dto.CityDTO</class-b>
+		<field>
+			<a>cityName</a>
+			<b>cityName</b>
+		</field>
+		<field>
+			<a>cityId</a>
+			<b>cityId</b>
+		</field>
+		<field>
+			<a>country</a>
+			<b>country</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>com.bookingmanager.hotel.entity.City</class-a>
+		<class-b>com.bookingmanager.hotel.dto.CityDTO</class-b>
+		<field>
+			<a>cityName</a>
+			<b>cityName</b>
+		</field>
+		<field>
+			<a>id</a>
+			<b>cityId</b>
+		</field>
+		<field>
+			<a>country</a>
+			<b>country</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>com.bookingmanager.vo.CountryVO</class-a>
+		<class-b>com.bookingmanager.hotel.dto.CountryDTO</class-b>
+		<field>
+			<a>name</a>
+			<b>countryName</b>
+		</field>
+		<field>
+			<a>id</a>
+			<b>countryId</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>com.bookingmanager.hotel.entity.Country</class-a>
+		<class-b>com.bookingmanager.hotel.dto.CountryDTO</class-b>
+		<field>
+			<a>countryName</a>
+			<b>countryName</b>
+		</field>
+		<field>
+			<a>id</a>
+			<b>countryId</b>
+		</field>
+	</mapping>
+</mappings>
